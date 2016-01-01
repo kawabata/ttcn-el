@@ -283,7 +283,7 @@ If point is on a keyword, help for that keyword will be shown."
     (backward-word 1)
     (let
 	((link
-	  (cond 
+	  (cond
 	   ((looking-at "action") "ActionKeyword")
 	   ((looking-at "activate") "ActivateKeyword")
 	   ((looking-at "address") "AddressKeyword")
@@ -461,11 +461,11 @@ in the info documenation for that mode."
   (c-common-init 'ttcn-3-mode)
   (setq comment-start "/* "
 	comment-end   " */"
- 	c-conditional-key c-TTCN3-conditional-key
+ 	;; c-conditional-key c-TTCN3-conditional-key
  	c-comment-start-regexp c-TTCN3-comment-start-regexp
-	c-method-key nil
-	c-switch-label-key c-TTCN3-alternative-key
- 	c-baseclass-key nil
+	;; c-method-key nil
+	;; c-switch-label-key c-TTCN3-alternative-key
+ 	;; c-baseclass-key nil
 	c-recognize-knr-p nil
 	defun-prompt-regexp c-TTCN3-defun-prompt-regexp
 	imenu-generic-expression ttcn3-imenu-generic-expression
